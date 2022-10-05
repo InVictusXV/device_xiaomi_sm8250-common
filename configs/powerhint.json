@@ -280,7 +280,7 @@
       "Name": "PMQoSCpuDmaLatency",
       "Path": "/dev/cpu_dma_latency",
       "Values": [
-        "61",
+        "44",
         "100"
       ],
       "HoldFd": true
@@ -436,7 +436,7 @@
       "PowerHint": "LAUNCH",
       "Node": "PMQoSCpuDmaLatency",
       "Duration": 5000,
-      "Value": "61"
+      "Value": "44"
     },
     {
       "PowerHint": "LAUNCH",
@@ -544,7 +544,7 @@
       "PowerHint": "CAMERA_LAUNCH",
       "Node": "PMQoSCpuDmaLatency",
       "Duration": 1000,
-      "Value": "61"
+      "Value": "44"
     },
     {
       "PowerHint": "CAMERA_STREAMING_MID",
@@ -724,13 +724,13 @@
       "PowerHint": "CAMERA_SHOT",
       "Node": "PMQoSCpuDmaLatency",
       "Duration": 1000,
-      "Value": "61"
+      "Value": "44"
     },
     {
       "PowerHint": "AUDIO_LAUNCH",
       "Node": "PMQoSCpuDmaLatency",
       "Duration": 0,
-      "Value": "61"
+      "Value": "44"
     },
     {
       "PowerHint": "AUDIO_STREAMING_LOW_LATENCY",
@@ -742,7 +742,7 @@
       "PowerHint": "AUDIO_STREAMING_LOW_LATENCY",
       "Node": "PMQoSCpuDmaLatency",
       "Duration": 0,
-      "Value": "61"
+      "Value": "44"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
@@ -766,7 +766,7 @@
       "PowerHint": "ML_ACC",
       "Node": "PMQoSCpuDmaLatency",
       "Duration": 2000,
-      "Value": "61"
+      "Value": "44"
     },
     {
       "PowerHint": "FIXED_PERFORMANCE",
