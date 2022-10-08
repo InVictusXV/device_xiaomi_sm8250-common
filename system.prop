@@ -32,6 +32,12 @@ persist.vendor.dpm.feature=1
 # Fwk detect
 ro.vendor.qti.va_aosp.support=1
 
+# Gboard side padding
+ro.com.google.ime.kb_pad_port_l=4 
+ro.com.google.ime.kb_pad_port_r=4 
+ro.com.google.ime.kb_pad_land_l=64 
+ro.com.google.ime.kb_pad_land_r=64
+
 # IMS
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
