@@ -10,6 +10,8 @@ debug.gralloc.gfx_ubwc_disable=0
 debug.sf.enable_hwc_vds=1
 persist.vendor.color.matrix=2
 ro.surface_flinger.enable_layer_caching=false
+debug.hwui.use_hint_manager=true
+debug.hwui.target_cpu_time_percent=20
 
 # DPM
 persist.vendor.dpm.feature=1
