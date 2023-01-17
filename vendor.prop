@@ -150,6 +150,7 @@ ro.bluetooth.a2dp_offload.supported=true
 ro.vendor.bluetooth.wipower=false
 vendor.qcom.bluetooth.soc=hastings
 persist.bluetooth.sbc_hd_higher_bitrate=1
+vendor.hw.fm.init=0
 
 # Chipset
 ro.soc.manufacturer=QTI
