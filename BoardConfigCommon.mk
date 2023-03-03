@@ -87,6 +87,9 @@ endif
 # HWUI
 HWUI_COMPILE_FOR_PERF := true
 
+# Lineage Health
+TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
+
 # Init
 TARGET_INIT_VENDOR_LIB ?= //$(COMMON_PATH):init_xiaomi_kona
 TARGET_RECOVERY_DEVICE_MODULES ?= init_xiaomi_kona
