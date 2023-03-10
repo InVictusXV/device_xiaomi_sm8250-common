@@ -1,5 +1,4 @@
-# Unpinned blobs from munch-user 13 RKQ1.211001.001 V14.0.3.0.TLMMIXM release-keys
-# lmi: lmi-user 11 RKQ1.200826.002 V12.5.3.0.RJKMIXM release-keys
+# Unpinned blobs from alioth_eea-user 13 RKQ1.211001.001 V14.0.7.0.TKHEUXM release-keys
 # renoir: 22.5.11
 
 # ADSP
@@ -152,6 +151,7 @@ vendor/lib64/libhdr_tm.so
 # Display (SDM)
 vendor/lib64/libdisplayqos.so
 vendor/lib64/libdisplayskuutils.so
+vendor/lib64/libdpps.so
 vendor/lib64/libgame_enhance.so
 vendor/lib64/libhdrdynamic.so
 vendor/lib64/libhdrdynamicootf.so
@@ -162,6 +162,7 @@ vendor/lib64/libsdm-diag.so
 vendor/lib64/libsdm-disp-vndapis.so
 vendor/lib64/libsdmextension.so
 vendor/lib64/libtinyxml2_1.so
+
 
 # Display postprocessing
 vendor/bin/hw/vendor.display.color@1.0-service
@@ -371,7 +372,7 @@ system_ext/lib64/lib-imsvtutils.so
 system_ext/lib64/libimscamera_jni.so
 system_ext/lib64/libimsmedia_jni.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so
-system_ext/lib64/vendor.qti.imsrtpservice@3.1.so
+-system_ext/priv-app/ims/ims.apk|e3e00942b31fe3344f4ad843abf8a268
 vendor/bin/ims_rtp_daemon
 vendor/bin/imsdatadaemon
 vendor/bin/imsqmidaemon
