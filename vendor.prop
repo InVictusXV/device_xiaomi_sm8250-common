@@ -281,6 +281,9 @@ ro.vendor.extension_library=libqti-perfd-client.so
 # Phantom process monitoring
 sys.fflag.override.settings_enable_monitor_phantom_procs=false
 
+# Pre-Rendering
+ro.vendor.perf.scroll_opt=true
+
 # Radio
 persist.radio.NO_STAPA=1
 persist.radio.VT_HYBRID_ENABLE=1
