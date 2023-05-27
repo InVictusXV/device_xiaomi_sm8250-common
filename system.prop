@@ -14,6 +14,9 @@ ro.surface_flinger.enable_layer_caching=false
 # DPM
 persist.vendor.dpm.feature=1
 
+# Feature flags
+persist.sys.fflag.override.settings_enable_monitor_phantom_procs=false
+
 # Fwk detect
 ro.vendor.qti.va_aosp.support=1
 
