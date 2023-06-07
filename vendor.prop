@@ -250,6 +250,10 @@ vendor.gralloc.disable_ubwc=0
 persist.vendor.pps.disallowed=1
 persist.vendor.hvdcp_opti.disallowed=1
 
+# HVDCP
+persist.vendor.pps.disallowed=1
+persist.vendor.hvdcp_opti.disallowed=1
+
 # Keystore
 ro.hardware.keystore_desede=true
 
