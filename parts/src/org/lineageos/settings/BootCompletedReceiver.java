@@ -24,6 +24,8 @@ import android.util.Log;
 
 import org.lineageos.settings.thermal.ThermalUtils;
 import org.lineageos.settings.utils.FileUtils;
+import org.lineageos.settings.dolby.DolbyUtils;
+
 public class BootCompletedReceiver extends BroadcastReceiver {
 
     private static final boolean DEBUG = false;
@@ -34,5 +36,6 @@ public class BootCompletedReceiver extends BroadcastReceiver {
         if (DEBUG) Log.d(TAG, "Received boot completed intent");
         ThermalUtils.startService(context);
         FileUtils.enableService(context);
+        DolbyUtils.getInstance(context).onBootCompleted();
     }
 }
