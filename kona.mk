@@ -205,6 +205,9 @@ PRODUCT_PACKAGES += \
 endif
 endif
 
+# Blur
+TARGET_ENABLE_BLUR := true
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health-service.qti
