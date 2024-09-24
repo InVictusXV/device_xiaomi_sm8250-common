@@ -64,6 +64,16 @@ while [ "${#}" -gt 0 ]; do
     shift
 done
 
+function blob_fixup() {
+    case "${1}" in
+       vendor/lib64/libwvhidl.so)
+            "${PATCHELF}" --replace-needed "libcrypto.so" "libcrypto-v34.so" "${2}"
+            ;;
+    esac
+
+    return 0
+}
+
 if [ -z "${SRC}" ]; then
     SRC="adb"
 fi

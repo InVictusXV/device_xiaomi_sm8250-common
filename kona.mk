@@ -351,6 +351,10 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl-xiaomi \
     android.hardware.sensors@1.0-service
 
+# Shims
+PRODUCT_PACKAGES += \
+    libcrypto-v34
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
