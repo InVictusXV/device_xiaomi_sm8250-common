@@ -13,6 +13,9 @@ persist.sys.appcompact.rss_throttle_kb=12000
 persist.sys.appcompact.delta_rss_throttle_kb=8000
 persist.sys.perf.topAppRenderThreadBoost.enable=false
 
+#Disbale FPS capping for games
+debug.graphics.game_default_frame_rate.disabled=true
+
 # App launch prefetching (IORapd)
 ro.iorapd.enable=false
 iorapd.perfetto.enable=false
