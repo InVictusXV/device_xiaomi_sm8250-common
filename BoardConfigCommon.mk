@@ -200,7 +200,7 @@ SOONG_CONFIG_XIAOMI_KONA_PARTITION_SCHEME := a
 endif
 
 # Security patch level
-VENDOR_SECURITY_PATCH := 2024-06-01
+VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
 # Sepolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
