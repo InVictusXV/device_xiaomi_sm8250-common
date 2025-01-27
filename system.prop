@@ -28,6 +28,11 @@ persist.dbg.wfc_avail_ovr=1
 # Netflix
 ro.netflix.bsp_rev=Q8250-19134-1
 
+# Perf
+ro.vendor.perf-hal.ver=2.2
+ro.vendor.perf.scroll_opt=1
+ro.vendor.qspm.enable=true
+
 # Radio
 persist.vendor.radio.report_codec=1
 
