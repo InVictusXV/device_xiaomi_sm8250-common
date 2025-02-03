@@ -117,13 +117,13 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8250
 TARGET_KERNEL_ARCH := arm64
-TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CLANG_VERSION := r547379
-TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-r547379
-KERNEL_LD := LD=ld.lld
-TARGET_KERNEL_ADDITIONAL_FLAGS := LD=ld.lld AR=llvm-ar NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip
-TARGET_KERNEL_ADDITIONAL_FLAGS += LLVM=1 LLVM_IAS=1
-TARGET_KERNEL_ADDITIONAL_FLAGS += HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
+TARGET_KERNEL_VERSION := 4.19
+BOARD_PREBUILT_DTBOIMAGE := device/xiaomi/alioth-kernel/dtbo.img
+TARGET_PREBUILT_KERNEL := device/xiaomi/alioth-kernel/Image
+TARGET_PREBUILT_DTB := device/xiaomi/alioth-kernel/dtb.img
+PRODUCT_COPY_FILES += \
+    device/xiaomi/alioth-kernel/dtb.img:$(TARGET_COPY_OUT)/dtb.img
+TARGET_NO_KERNEL_OVERRIDE := true
 
 # Lineage Health
 TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false

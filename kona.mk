@@ -204,6 +204,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fastbootd
 
+# Kernel Headers
+PRODUCT_VENDOR_KERNEL_HEADERS := device/xiaomi/alioth-kernel/kernel-headers
+# Kernel
+LOCAL_KERNEL := device/xiaomi/alioth-kernel/Image
+PRODUCT_COPY_FILES += \
+    $(LOCAL_KERNEL):kernel
+
 # Fingerprint
 ifneq ($(TARGET_IS_TABLET),true)
 PRODUCT_PACKAGES += \
