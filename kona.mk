@@ -268,6 +268,14 @@ PRODUCT_PACKAGES += \
     media_codecs_kona.xml \
     media_codecs_performance_kona.xml
 
+# Kernel Headers
+PRODUCT_VENDOR_KERNEL_HEADERS := device/xiaomi/alioth-kernel/kernel-headers
+
+# Kernel
+LOCAL_KERNEL := device/xiaomi/alioth-kernel/Image
+PRODUCT_COPY_FILES += \
+    $(LOCAL_KERNEL):kernel
+
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc-service.nxp \
