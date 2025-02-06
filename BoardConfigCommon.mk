@@ -102,13 +102,14 @@ BOARD_KERNEL_CMDLINE += androidboot.fstab_suffix=qcom
 BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
-BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
-TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8250
-
-# Kernel Clang Flags
-KERNEL_CC := CC=clang
-override KERNEL_TOOLCHAIN_PREFIX_arm := arm-linux-android-
+TARGET_KERNEL_VERSION := 4.19
+BOARD_PREBUILT_DTBOIMAGE := device/xiaomi/alioth-kernel/dtbo.img
+TARGET_PREBUILT_KERNEL := device/xiaomi/alioth-kernel/Image
+TARGET_PREBUILT_DTB := device/xiaomi/alioth-kernel/dtb.img
+PRODUCT_COPY_FILES += \
+    device/xiaomi/alioth-kernel/dtb.img:$(TARGET_COPY_OUT)/dtb.img
+TARGET_NO_KERNEL_OVERRIDE := true
 
 # Lineage Health
 TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
